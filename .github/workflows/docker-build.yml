@@ -14,7 +14,7 @@ permissions:
 jobs:
   docker-build:
     if: github.repository == 'ipfs/kubo' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 10
     env:
       IMAGE_NAME: ipfs/kubo
